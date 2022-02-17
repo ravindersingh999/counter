@@ -1,10 +1,8 @@
 var data = 0;
 
-document.getElementById("count").innerHTML = data;
-
 function increment(){
     data = data + 1;
-    document.getElementById("count").innerHTML = data;
+    display();
 }
 
 function decrement(){
@@ -15,5 +13,10 @@ function decrement(){
         data = data - 1;
     }
     
-    document.getElementById("count").innerHTML = data;
+    display();
+}
+
+
+function display(){
+    document.getElementById("count").innerHTML = data
 }
